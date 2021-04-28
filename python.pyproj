@@ -1,0 +1,180 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>1c2eba96-4b33-4e8c-b0cd-8064116a8dba</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>SpaceRaiders.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>python</Name>
+    <RootNamespace>python</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="gui.py" />
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\LvMOD.py" />
+    <Compile Include="mod\LvObjMOD.py" />
+    <Compile Include="mod\PlrMOD.py" />
+    <Compile Include="mod\ScrMOD.py" />
+    <Compile Include="mod\SndMOD.py" />
+    <Compile Include="mod\SprMOD.py" />
+    <Compile Include="network.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="server.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpaceRaiders.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="mod\" />
+    <Folder Include="mod\__pycache__\" />
+    <Folder Include="spr\" />
+    <Folder Include="snd\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mod\__pycache__\LvMOD.cpython-39.pyc" />
+    <Content Include="mod\__pycache__\LvObjMOD.cpython-39.pyc" />
+    <Content Include="mod\__pycache__\PlrMOD.cpython-39.pyc" />
+    <Content Include="mod\__pycache__\ScrMOD.cpython-39.pyc" />
+    <Content Include="mod\__pycache__\SprMOD.cpython-39.pyc" />
+    <Content Include="snd\ast_explode.wav" />
+    <Content Include="snd\explode.wav" />
+    <Content Include="snd\laser.wav" />
+    <Content Include="snd\respawn.wav" />
+    <Content Include="snd\teleport.wav" />
+    <Content Include="spr\ast.aseprite" />
+    <Content Include="spr\ast.png" />
+    <Content Include="spr\ast2.png" />
+    <Content Include="spr\ast3.png" />
+    <Content Include="spr\beam.aseprite" />
+    <Content Include="spr\beam.png" />
+    <Content Include="spr\beam2.png" />
+    <Content Include="spr\beam3.png" />
+    <Content Include="spr\beam4.png" />
+    <Content Include="spr\beam5.png" />
+    <Content Include="spr\beam6.png" />
+    <Content Include="spr\BG.aseprite" />
+    <Content Include="spr\BG.png" />
+    <Content Include="spr\BG2.png" />
+    <Content Include="spr\BG22_1.png" />
+    <Content Include="spr\BG22_2.png" />
+    <Content Include="spr\BG22_3.png" />
+    <Content Include="spr\BG22_4.png" />
+    <Content Include="spr\BG22_5.png" />
+    <Content Include="spr\BG2_1.png" />
+    <Content Include="spr\BG3.png" />
+    <Content Include="spr\BG31.png" />
+    <Content Include="spr\BG31_1.png" />
+    <Content Include="spr\BG31_2.png" />
+    <Content Include="spr\BG31_3.png" />
+    <Content Include="spr\BG32.png" />
+    <Content Include="spr\BG32_1.png" />
+    <Content Include="spr\BG32_2.png" />
+    <Content Include="spr\BG32_3.png" />
+    <Content Include="spr\BG33.png" />
+    <Content Include="spr\BG33_1.png" />
+    <Content Include="spr\BG33_2.png" />
+    <Content Include="spr\BG33_3.png" />
+    <Content Include="spr\BG4.png" />
+    <Content Include="spr\BG5.png" />
+    <Content Include="spr\horizontal_wall.aseprite" />
+    <Content Include="spr\horizontal_wall.png" />
+    <Content Include="spr\lives1_0.png" />
+    <Content Include="spr\lives1_1.png" />
+    <Content Include="spr\lives1_2.png" />
+    <Content Include="spr\lives1_3.png" />
+    <Content Include="spr\lives2_0.png" />
+    <Content Include="spr\lives2_1.png" />
+    <Content Include="spr\lives2_2.png" />
+    <Content Include="spr\lives2_3.png" />
+    <Content Include="spr\map1.png" />
+    <Content Include="spr\map2.png" />
+    <Content Include="spr\map3.png" />
+    <Content Include="spr\P1.aseprite" />
+    <Content Include="spr\P1.png" />
+    <Content Include="spr\P1_0.png" />
+    <Content Include="spr\P1_1.png" />
+    <Content Include="spr\P1_10.png" />
+    <Content Include="spr\P1_11.png" />
+    <Content Include="spr\P1_12.png" />
+    <Content Include="spr\P1_13.png" />
+    <Content Include="spr\P1_14.png" />
+    <Content Include="spr\P1_15.png" />
+    <Content Include="spr\P1_16.png" />
+    <Content Include="spr\P1_17.png" />
+    <Content Include="spr\P1_2.png" />
+    <Content Include="spr\P1_3.png" />
+    <Content Include="spr\P1_4.png" />
+    <Content Include="spr\P1_5.png" />
+    <Content Include="spr\P1_6.png" />
+    <Content Include="spr\P1_7.png" />
+    <Content Include="spr\P1_8.png" />
+    <Content Include="spr\P1_9.png" />
+    <Content Include="spr\P1_Laser.aseprite" />
+    <Content Include="spr\P1_Laser.png" />
+    <Content Include="spr\P1_WIN.png" />
+    <Content Include="spr\P2.png" />
+    <Content Include="spr\P2_0.png" />
+    <Content Include="spr\P2_1.png" />
+    <Content Include="spr\P2_10.png" />
+    <Content Include="spr\P2_11.png" />
+    <Content Include="spr\P2_12.png" />
+    <Content Include="spr\P2_13.png" />
+    <Content Include="spr\P2_14.png" />
+    <Content Include="spr\P2_15.png" />
+    <Content Include="spr\P2_16.png" />
+    <Content Include="spr\P2_17.png" />
+    <Content Include="spr\P2_2.png" />
+    <Content Include="spr\P2_3.png" />
+    <Content Include="spr\P2_4.png" />
+    <Content Include="spr\P2_5.png" />
+    <Content Include="spr\P2_6.png" />
+    <Content Include="spr\P2_7.png" />
+    <Content Include="spr\P2_8.png" />
+    <Content Include="spr\P2_9.png" />
+    <Content Include="spr\P2_Laser.png" />
+    <Content Include="spr\P2_WIN.png" />
+    <Content Include="spr\sm_ast.aseprite" />
+    <Content Include="spr\sm_ast.png" />
+    <Content Include="spr\sm_ast2.png" />
+    <Content Include="spr\sm_ast3.png" />
+    <Content Include="spr\stars.png" />
+    <Content Include="spr\stars2.png" />
+    <Content Include="spr\stars3.png" />
+    <Content Include="spr\stars4.png" />
+    <Content Include="spr\teleporter.aseprite" />
+    <Content Include="spr\teleporter_b1.png" />
+    <Content Include="spr\teleporter_b2.png" />
+    <Content Include="spr\teleporter_r1.png" />
+    <Content Include="spr\teleporter_r2.png" />
+    <Content Include="spr\teleporter_w1.png" />
+    <Content Include="spr\teleporter_w2.png" />
+    <Content Include="spr\teleporter_y1.png" />
+    <Content Include="spr\teleporter_y2.png" />
+    <Content Include="spr\vertical_wall.aseprite" />
+    <Content Include="spr\vertical_wall.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
